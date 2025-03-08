@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Prakash Suthar" />
+  <meta property="og:image" content="./assets/E.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <title>Portfolio | Prakash Suthar</title>
+  <link rel="icon" href="./assets/E.png" />
+  <link rel="canonical" href="" />
+  <!-- <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" /> -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="loader.css" />
+  <style data-styles="">
+    ion-icon {
+      visibility: hidden
+    }
+
+    .hydrated {
+      visibility: inherit
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <div class="loaderDiv">
+    <div class="loader"></div>
+    <p>Loading page</p>
+  </div>
+  <div class="toaster"></div>
+  <div class="bg-div"></div>
+  <header class="header" id="header">
+    <div class="logo img">
+      <img class="" src="./assets/E.png" alt="logo" />
+    </div>
+    <p class="logo initials" tabindex="1" href=""></p>
+    <div class="navbar">
+      <ul class="navbar-list">
+        <li>
+          <a class="navbar-link active" name="home" onclick="scrollToSection(this),toggleNav()" tabindex="4">Home</a>
+        </li>
+        <li>
+          <a class="navbar-link" name="about" onclick="scrollToSection(this),toggleNav()" tabindex="5">About</a>
+        </li>
+        <li>
+          <a class="navbar-link" name="skills" onclick="scrollToSection(this),toggleNav()" tabindex="6">Skills</a>
+        </li>
+        <li>
+          <a class="navbar-link" name="projects" onclick="scrollToSection(this),toggleNav()" tabindex="7">Projects</a>
+        </li>
+        <li>
+          <a class="navbar-link" name="education" onclick="scrollToSection(this),toggleNav()" tabindex="8">Education</a>
+        </li>
+
+      </ul>
+      <a class="contactBtn button" name="getInTouch" tabindex="10" href="mailto:pjangid096@gmail.com"
+        target="_blank">Contact</a><ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon"
+        onclick="toggleNav()"></ion-icon>
+    </div>
+    <ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+  </header>
+  <section class="section home-section" id="home" tabindex="42">
+    <div>
+      <h1>Hey, I'm <span class="name">Prakash</span></h1>
+      <p class="aboutShort">
+        As a MERN stack developer and Java Spring Boot developer, I am passionate about 
+        creating user-friendly, visually appealing, and responsive web applications.
+      </p>      
+      <button class="about-me-btn button" name="about" onclick="scrollToSection(this)" tabindex="2">
+        About Me<ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+    </div>
+    <div class="imgDiv">
+      <img src="./assets/pm.png" class="profile-image" />
+    </div>
+  </section>
+  <section id="about" class="section about-section" tabindex="11">
+    <div class="about-ill"><img src="./assets/project.png" alt="Memoji" /></div>
+    <div class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+      <h2 class="name">Prakash Suthar</h2>
+      <div class="professionContainer">
+        <p class="profession">MERN stack Developer</p>
+        <p class="profession">MongoDB/DataBase Administrator</p>
+      </div>
+      <br />
+     
+      <p class="aboutLong">
+        As a MERN stack developer, Java Spring Boot developer, and database administrator, I am passionate about building 
+        user-centric, visually appealing, and responsive web applications. With a strong foundation in 
+        <b>HTML, CSS, and JavaScript</b>, I leverage libraries and frameworks such as <b>ReactJS, Redux, and Bootstrap</b> to create 
+        dynamic and interactive user interfaces.<br /><br /> 
+        
+        My expertise extends to backend development with <b>Node.js, Express, MongoDB, and Java Spring Boot</b>, enabling me to design 
+        full-stack applications that are both efficient and scalable. As a DBA, I focus on optimizing database performance and ensuring 
+        data integrity across projects.<br /><br /> 
+        
+        Highly motivated and detail-oriented, I continuously seek to expand my technical knowledge and problem-solving abilities, 
+        adhering to industry standards and best practices. My strong communication and teamwork skills allow me to collaborate effectively 
+        within cross-functional teams, ensuring project success and high-quality outcomes.<br /><br /> 
+        
+        I aim to contribute to the organization’s success by leveraging my skills in MERN stack development, Java Spring Boot, and 
+        database management, while also growing as a versatile developer and administrator.
+      </p>
+      
+      <br /><a class="button"
+        href="https://drive.google.com/file/d/1cgOEMMrcBaOYnDIwy0Yp07YmfnivnswT/view?usp=drive_link" target="_blank"
+        tabindex="12">Resume<ion-icon name="document-outline"></ion-icon></a>
+    </div>
+    <ul class="social-menu" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
+      <li id="github">
+        <a href="https://www.linkedin.com/in/prakash-suthar-6131891b2" aria-label="linkedin" class="linkedin"
+          tabindex="13"><i class="fab fa-linkedin-in"></i></a>
+      </li>
+      <li id="linkedin">
+        <a href="https://www.github.com/prakash7727" aria-label="github" class="github" tabindex="14"><i
+            class="fab fa-github"></i></a>
+      </li>
+      <li id="instagram">
+        <a href="https://www.instagram.com/prakash_palesa" aria-label="instagram" class="instagram" tabindex="15"><i
+            class="fab fa-instagram"></i></a>
+      </li>
+      <li id="twitter">
+        <a href="https://www.twitter.com/prakash_palesa" aria-label="twitter" class="twitter" tabindex="16"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+          </svg></a>
+      </li>
+    </ul>
+  </section>
+  <section class="section skill-section" id="skills" tabindex="17">
+    <div style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        " data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">
+        My Skills
+        <p>Tiles in <span>blue</span> are some of my major skills.</p>
+      </h1>
+      <div class="skill-container">
+        <div class="major">
+          <img src="./assets/html.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="major">
+          <img src="./assets/css-3.png" alt="CSS3" />
+          <p>CSS3</p>
+        </div>
+        <div class="major">
+          <img src="./assets/js.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="major">
+          <img src="./assets/react-2.svg" alt="ReactJs" />
+          <p>ReactJs</p>
+        </div>
+        <div class="major">
+          <img src="./assets/bootstrap.png" alt="Bootstrap" />
+          <p>Bootstrap</p>
+        </div>
+        <div class="major">
+          <img src="./assets/java.svg" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div class="major">
+          <img src="./assets/mongodb-icon-1.svg" alt="MongoDB" />
+          <p>MongoDB</p>
+        </div>
+        <div class="major">
+          <img src="./assets/nodejs-1.svg" alt="NodeJs" />
+          <p>NodeJs</p>
+        </div>
+        <div class="major">
+          <img src="./assets/express-109.svg" alt="ExpressJs" />
+          <p>ExpressJs</p>
+        </div>
+        <div class="minor">
+          <img src="./assets/python-5.svg" alt="Chakra UI" />
+          <p>Python</p>
+        </div>
+        <div class="major">
+          <img src="./assets/github-icon-2.svg" alt="Github" />
+          <p>Github</p>
+        </div>
+        <div class="minor">
+          <img src="./assets/git-bash.svg" alt="Github" />
+          <p>GitBash</p>
+        </div>
+        <div class="minor">
+          <img src="./assets/linux-tux.svg" alt="Github" />
+          <p>Linux</p>
+        </div>
+        <div class="major">
+          <img src="./assets/vercel.svg" alt="Netlify" />
+          <p>Vercel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section main project-section" id="projects" tabindex="18">
+    <div style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        " data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+      <div class="section-header">
+        <h1 class="title">
+          My recent work
+          <p class="sectionDesc">
+            Here are a few past projects I've worked on. Want to see more?<a href="https://www.gmail.com" tabindex="22">
+              View More ></a>
+          </p>
+        </h1>
+      </div>
+      <div class="project card-container">
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/TheOsis.png" alt="Project image" />
+          </div>
+          <br />
+          <h6>The Wild Osis Hotel Website</h6>
+          <p class="techstack">
+            <span>Techstack </span>- HTML5, CSS3, JavaScript,React-Vite,SupabaseApi
+          </p>
+          <p class="library"><span>Libraries </span>- Bootstrap,ANTD</p>
+          <div class="options">
+            <a class="viewElem" href="https://hotel-management-with-supabase-api.vercel.app" target="_blank"><ion-icon
+                name="open-outline"></ion-icon></a><a class="githubElem"
+              href="https://github.com/prakash7727/HotelManagementWithSupabseApi" target="_blank"><ion-icon
+                name="logo-github"></ion-icon></a><button class="share">
+              <ion-icon name="link-outline">Copied text!</ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/pizza.png" alt="Project image" />
+          </div>
+          <br />
+          <h6>E-Shop Order Website</h6>
+          <p class="techstack">
+            <span>Techstack </span>- HTML5, CSS3, JavaScript,React,Redux
+          </p>
+          <p class="library"><span>Libraries </span>- Bootstrap</p>
+          <div class="options">
+            <a class="viewElem" href="https://pizza-order-api.vercel.app" target="_blank"><ion-icon
+                name="open-outline"></ion-icon></a><a class="githubElem"
+              href="https://github.com/prakash7727/PizzaOrderApi" target="_blank"><ion-icon
+                name="logo-github"></ion-icon></a><button class="share">
+              <ion-icon name="link-outline">Copied text!</ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section education-section" id="education" tabindex="23">
+    <div style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        " data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">
+        Education
+        <p>These are some of my past qualifications.</p>
+      </h1>
+      <div class="card-container">
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/graduation.png" alt="Institute image" />
+          </div>
+          <br />
+          <h6 class="courseName">Bachelar of Education</h6>
+          <p class="instituteName">
+            Jai Narayan Vyas University, Jodhpur,Rajasthan
+          </p>
+          <p class="instituteDesc">
+            A NAAC Reaccredited "A" Grade University.
+          </p>
+          <br />
+          <p class="status Completed">Completed 2016-2019</p>
+        </div>
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image" />
+          </div>
+          <br />
+          <h6 class="courseName">Bachelor of Computer application-BCA</h6>
+          <p class="instituteName">
+            Vardhman Mahavir Open University Kota,Rajasthan
+          </p>
+          <p class="instituteDesc">
+            A NAAC Reaccredited "A" Grade University.
+          </p>
+          <br />
+          <p class="status Completed">Completed 2021-2024</p>
+        </div>
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/high-school.png" alt="Institute image" />
+          </div>
+          <br />
+          <h6 class="courseName">HSC | Art</h6>
+          <p class="instituteName">Govt Sen Sec School Hemaguda,Rajasthan</p>
+          <p class="instituteDesc">
+            The Best RBSE Affiliated School in Hemaguda.
+          </p>
+          <br />
+          <p class="status Completed">Completed 2015</p>
+        </div>
+        <!-- <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/school.png" alt="Institute image" />
+          </div>
+          <br />
+          <h6 class="courseName">State Secondary Certificate (SSC)</h6>
+          <p class="instituteName">Govt Sen Sec School Hemaguda,Rajasthan</p>
+          <p class="instituteDesc">
+            The Best RBSE Affiliated School in Hemaguda.
+          </p>
+          <br />
+          <p class="status Completed">Completed 2013</p>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <div class="formDiv">
+    <img alt="contact illustration" src="./assets/contact.png" />
+    <form id="myform">
+      <div class="user-box">
+        <input type="text" id="name" required /><label for="Name">Your Name</label>
+      </div>
+      <div class="user-box">
+        <input type="email" id="email" required /><label for="Email">Email Address</label>
+      </div>
+      <div class="user-box">
+        <textarea id="message" required></textarea><label for="Message">Enter your message</label>
+      </div>
+      <button type="submit" class="submit-btn button">Submit</button>
+    </form>
+    <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+  </div>
+  <footer class="footer" tabindex="35">
+    <div class="getInTouch">
+      <h3>Start a project?</h3>
+      <p>
+        Interested in working together? We should queue up a time to chat.
+      </p>
+      <a class="getInTouchBtn button" target="_blank" href="mailto:pjangid096@gmail.com" tabindex="36">Get in touch</a>
+    </div>
+    <div class="footerParent">
+      <div class="profInfo">
+        <div class="imgDiv">
+          <img src="./assets/E.png" alt="Profile Image" />
+        </div>
+        <p>
+          Prakash Jangid<br />Mail me at
+          <a href="mailto:pjangid096@gmail.com" tabindex="37">pjangid096@gmail.com</a>
+        </p>
+      </div>
+      <div class="reachMeOut">
+        <h3>Reach me out on</h3>
+        <ul class="social-menu">
+          <li id="linkedin">
+            <a href="https://www.linkedin.com/in/prakash-suthar-6131891b2" target="_blank" class="linkedin"
+              tabindex="38" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li id="github">
+            <a href="https://github.com/prakash7727" target="_blank" aria-label="github" class="github" tabindex="39"><i
+                class="fab fa-github"></i></a>
+          </li>
+          <li id="instagram">
+            <a href="https://www.instagram.com/prakash_palesa" target="_blank" aria-label="instagram" class="instagram"
+              tabindex="40"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li id="twitter">
+            <a href="https://twitter.com/prakash_palesa" target="_blank" aria-label="twitter" class="twitter"
+              tabindex="41"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+  <!-- <script src="firebase.js"></script> -->
+  <script src="commonScript.js"></script>
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
